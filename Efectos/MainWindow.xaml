@@ -1,0 +1,22 @@
+﻿<Window x:Class="Efectos.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Efectos"
+        mc:Ignorable="d"
+        Title="Efectos" Height="350" Width="525">
+    <Grid x:Name="sldfactor">
+        <TextBox x:Name="txtruta" HorizontalAlignment="Left" Height="28" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="396"/>
+        <Button x:Name="btnexaminar" Content="Examinar" HorizontalAlignment="Left" Height="28" Margin="411,10,0,0" VerticalAlignment="Top" Width="96" Click="btnexaminar_Click"/>
+        <Button x:Name="btnrepro" Content="Reproducir" HorizontalAlignment="Left" Height="29" Margin="10,43,0,0" VerticalAlignment="Top" Width="102" Click="btnrepro_Click"/>
+        <Slider x:Name="sldretraso" HorizontalAlignment="Left" Margin="10,145,0,0" VerticalAlignment="Top" Width="497" Minimum="50" Maximum="5000" ValueChanged="sliderdela_ValueChanged"/>
+        <Label x:Name="lblnum" HorizontalAlignment="Left" Margin="10,168,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.079,0.308"/>
+        <Label x:Name="lblretrasp" Content="Factor Retraso:" HorizontalAlignment="Left" Margin="10,119,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblatenuante" Content="Factor atenuante:" HorizontalAlignment="Left" Margin="10,212,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="lblnum1" HorizontalAlignment="Left" Margin="10,178,0,0" TextWrapping="Wrap" Text="50ms" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtate" HorizontalAlignment="Left" Height="23" Margin="117,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnDelay" Content="Delay" HorizontalAlignment="Left" Margin="229,47,0,0" VerticalAlignment="Top" Width="75" Click="btnDelay_Click"/>
+
+    </Grid>
+</Window>
